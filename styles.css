@@ -10,6 +10,7 @@
     margin: 10px;
     padding: 10px;
     color: black;
+    background-color: blue;
 }
 
 .col {
@@ -19,4 +20,5 @@
     margin: 10px;
     padding: 10px;
     color: black;
+    background-color: black;
 }
