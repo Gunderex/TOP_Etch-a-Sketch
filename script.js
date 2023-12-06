@@ -21,10 +21,11 @@ function createRow(rowNum) {
 
 createRow(16);
 
-// const tile = document.querySelectorAll(".col");
-// tile.addEventListener('mouseenter', () => {
-//     tile.classList.add("colFill");
-// })
-// tile.addEventListener('mouseleave', () => {
-//     tile.classList.remove("colFill");
-// })
+function hoverListen(event) {
+    const divToggle = document.querySelector(`"#` + event.target.id + `"`);
+    divToggle.classList.toggle("colFill");
+}
+
+const squares = document.querySelector(".col");
+squares.addEventListener('mouseenter', hoverListen);
+squares.addEventListener('mouseleave', hoverListen);
