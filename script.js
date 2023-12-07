@@ -28,22 +28,25 @@ function hoverListen(event) {
 
 const squares = document.querySelectorAll(".col");
 
-function hoverOn() {
+
 for (let i = 0; i < squares.length; i++) {
     squares[i].addEventListener("mouseenter", function() {
       squares[i].classList.toggle("colFill");
     });
 }
-}
 
-function hoverOff() {
+
 for (let i = 0; i < squares.length; i++) {
     squares[i].addEventListener("mouseleave", function() {
       squares[i].classList.toggle("colFill");
     });
 }
-}
 
-function delayHover() {
-    timeoutId = setTimeout (hoverOff, 3);
-}
+
+// function hoverOff () {
+//     squares[i].classList.toggle("colFill");
+// }
+
+// function delayHover() {
+//     timeoutId = setTimeout (hoverOfff, 3000);
+// }
