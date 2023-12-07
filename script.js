@@ -27,5 +27,16 @@ function hoverListen(event) {
 }
 
 const squares = document.querySelectorAll(".col");
-squares.addEventListener('mouseenter', hoverListen);
-squares.addEventListener('mouseleave', hoverListen);
+for (let i = 0; i < squares.length; i++) {
+    squares[i].addEventListener("mouseenter", function() {
+      squares[i].classList.toggle("colFill");
+    });
+}
+
+for (let i = 0; i < squares.length; i++) {
+    squares[i].addEventListener("mouseleave", function() {
+      squares[i].classList.toggle("colFill");
+    });
+}
+// squares.addEventListener('mouseenter', hoverListen);
+// squares.addEventListener('mouseleave', hoverListen);
