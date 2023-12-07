@@ -1,17 +1,17 @@
 
 #container {
     Width: 500px;
-    Height: 500px:
+    Height: 500px;
 }
 
 #canvas {
     display: flex;
-    flex: 1 1 auto;
+    flex: 1 2 auto;
     
 }
 
 .row {
-    flex: 1 1 auto;
+    flex: 1 2 auto;
     border: 5px;
     border-color: red;
     margin: 0px;
@@ -20,8 +20,8 @@
 }
 
 .col {
-    flex: 1 1 auto;
-    height: auto;
+    flex: 1 2 auto;
+    
     border: 5px;
     border-color: red;
     margin: 1px;
