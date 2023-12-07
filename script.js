@@ -1,5 +1,6 @@
 const canvas = document.querySelector("#canvas");
 
+/* Function creates grid of divs depending on input number */
 function createRow(rowNum) {
     
     for (let i = 0; i < rowNum; i++) {
@@ -21,24 +22,20 @@ function createRow(rowNum) {
 
 createRow(16);
 
-function hoverListen(event) {
-    const divToggle = document.querySelector(`#` + event.target.id);
-    divToggle.classList.toggle("colFill");
-}
 
+/* Declares constant for all .col divs then listens for hover to toggle
+    colFill */
 const squares = document.querySelectorAll(".col");
-
 
 for (let i = 0; i < squares.length; i++) {
     squares[i].addEventListener("mouseenter", function() {
-      squares[i].classList.toggle("colFill");
+      squares[i].classList.add("colFill");
     });
 }
 
-
 for (let i = 0; i < squares.length; i++) {
     squares[i].addEventListener("mouseleave", function() {
-      setTimeout(function () {squares[i].classList.toggle("colFill")}, 3000);
+      setTimeout(function () {squares[i].classList.remove("colFill")}, 3000);
     });
 }
 
