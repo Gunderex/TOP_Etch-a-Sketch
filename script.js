@@ -1,8 +1,14 @@
 const canvas = document.querySelector("#canvas");
 
-/* Function creates grid of divs depending on input number */
+/* Function to remove any current canvas divs */
+function removeCanvas() {
+    while (canvas.hasChildNodes())
+            canvas.firstChild.remove()
+}
+
+/* Function clears current canvas then creates grid of divs depending on input number */
 function createRow(rowNum) {
-    
+    removeCanvas();
     for (let i = 0; i < rowNum; i++) {
         let newRow = document.createElement("div");
         newRow.className = "row";
