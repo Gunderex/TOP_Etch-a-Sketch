@@ -23,16 +23,17 @@ function createRow(rowNum) {
             
         }
     }
-
+    squares = document.querySelectorAll(".col");
 }
 
 /* Creates initial 16x16 canvas */
+let squares = document.querySelectorAll(".col");
 createRow(16);
 
 
 /* Declares constant for all .col divs then listens for hover to toggle
     colFill */
-const squares = document.querySelectorAll(".col");
+
 
 for (let i = 0; i < squares.length; i++) {
     squares[i].addEventListener("mouseenter", function() {
