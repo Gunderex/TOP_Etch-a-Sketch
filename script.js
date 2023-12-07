@@ -38,5 +38,3 @@ for (let i = 0; i < squares.length; i++) {
       squares[i].classList.toggle("colFill");
     });
 }
-// squares.addEventListener('mouseenter', hoverListen);
-// squares.addEventListener('mouseleave', hoverListen);
