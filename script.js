@@ -20,6 +20,7 @@ function createRow(rowNum) {
 
 }
 
+/* Creates initial 16x16 canvas */
 createRow(16);
 
 
@@ -39,3 +40,16 @@ for (let i = 0; i < squares.length; i++) {
     });
 }
 
+
+function clickListener(event) {
+    if (event.target.tagName !== "BUTTON") {
+       return;
+    }
+    let targetId = event.target.id;
+    let newRowNum = targetId.replace("b","");
+    createRow(newRowNum);
+ }
+
+const btn16 = document.querySelector("#b16").addEventListener("click", clickListener);
+const btn50 = document.querySelector("#b50").addEventListener("click", clickListener);
+const btn100 = document.querySelector("#b100").addEventListener("click", clickListener);

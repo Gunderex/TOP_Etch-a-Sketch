@@ -32,3 +32,11 @@
     display: block;
     padding-top: 100%;
 }
+
+.btn {
+    flex: 1 0 auto;
+}
+
+.btnFill {
+    background-color: lightblue;
+}
