@@ -1,3 +1,9 @@
+
+#container {
+    Width: 500px;
+    Height: 500px:
+}
+
 #canvas {
     display: flex;
     flex: 1 1 auto;
