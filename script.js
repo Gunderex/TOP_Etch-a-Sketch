@@ -38,15 +38,7 @@ for (let i = 0; i < squares.length; i++) {
 
 for (let i = 0; i < squares.length; i++) {
     squares[i].addEventListener("mouseleave", function() {
-      squares[i].classList.toggle("colFill");
+      setTimeout(function () {squares[i].classList.toggle("colFill")}, 3000);
     });
 }
 
-
-// function hoverOff () {
-//     squares[i].classList.toggle("colFill");
-// }
-
-// function delayHover() {
-//     timeoutId = setTimeout (hoverOfff, 3000);
-// }
